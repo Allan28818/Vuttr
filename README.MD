@@ -1,0 +1,6 @@
+- [ ] Get padrão nos repositórios;
+- [ ] Filtrar a requisição;
+- [ ] Adicionar repositório;
+- [ ] Remover repositório;
+- [ ] Estilizar;
+- [ ] Design responsivo;

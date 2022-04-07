@@ -1,5 +1,5 @@
-- [ ] Get padrão nos repositórios;
-- [ ] Filtrar a requisição;
+- [x] Get padrão nos repositórios;
+- [x] Filtrar a requisição;
 - [ ] Adicionar repositório;
 - [ ] Remover repositório;
 - [ ] Estilizar;

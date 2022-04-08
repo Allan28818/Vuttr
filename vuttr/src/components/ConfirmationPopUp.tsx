@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "../styles/css/components/confirmation-pop-up.css";
+
 interface ConfirmationPopUpProps {
   title: string;
   description: string;
@@ -7,9 +9,9 @@ interface ConfirmationPopUpProps {
   setShowPopUp: React.Dispatch<React.SetStateAction<boolean>>;
   buttonsText: {
     confirm: string;
-    cancel: string;
+    cancel?: string;
   };
-  cbFunction: () => {};
+  cbFunction?: () => void;
 }
 
 function ConfirmationPopUp(props: ConfirmationPopUpProps) {
@@ -25,16 +27,27 @@ function ConfirmationPopUp(props: ConfirmationPopUpProps) {
   return (
     <div className={showPopUp ? "pop-up-bg" : "hidden"}>
       <div className="pop-up-wrapper">
-        <h1 className="title">{title}</h1>
-        <p className="description">{description}</p>
+        <h1 className="header-2">{title}</h1>
+        <p className="body-small">{description}</p>
 
         <div className="buttons-wrapper">
-          <button className="cancel-btn">{buttonsText.cancel}</button>
+          {buttonsText.cancel && (
+            <button
+              className="button-primary-danger"
+              onClick={() => {
+                setShowPopUp(false);
+              }}
+            >
+              {buttonsText.cancel}
+            </button>
+          )}
           <button
-            className="confirm-btn"
+            className="button-primary-neutral"
             onClick={() => {
               setShowPopUp(false);
-              cbFunction();
+              if (!!cbFunction) {
+                cbFunction();
+              }
             }}
           >
             {buttonsText.confirm}

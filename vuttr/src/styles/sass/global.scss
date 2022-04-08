@@ -1,0 +1,23 @@
+@import "./_variables.scss";
+@import "./_functions.scss";
+@import "./typography.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+.hidden {
+  opacity: 0;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  z-index: 11;
+}
+
+ul {
+  list-style: none;
+}

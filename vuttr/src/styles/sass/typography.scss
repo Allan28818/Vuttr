@@ -1,0 +1,157 @@
+@import "./variables";
+@import "./functions";
+
+.header-1 {
+  font: normal normal 600 42px/50px Source Sans Pro;
+  letter-spacing: 0.84px;
+  color: $ink;
+  opacity: 1;
+}
+
+.header-2 {
+  font: normal normal 600 36px/40px Source Sans Pro;
+  letter-spacing: 0.72px;
+  color: $ink;
+  opacity: 1;
+}
+
+.header-3 {
+  font: normal normal 600 30px/36px Source Sans Pro;
+  letter-spacing: 0.6px;
+  color: $ink;
+  opacity: 1;
+}
+
+.header-4 {
+  font: normal normal 600 26px/32px Source Sans Pro;
+  letter-spacing: 0.52px;
+  color: $ink;
+  opacity: 1;
+}
+
+.header-5 {
+  font: normal normal 600 24px/30px Source Sans Pro;
+  letter-spacing: 0.48px;
+  color: $ink;
+  opacity: 1;
+}
+
+.body {
+  font: normal normal normal 20px/26px Source Sans Pro;
+  letter-spacing: 0.4px;
+  color: $ink;
+  opacity: 1;
+}
+
+.body-small {
+  font: normal normal normal 18px/24px Source Sans Pro;
+  letter-spacing: 0.36px;
+  color: $ink;
+  opacity: 1;
+}
+
+.body-smallest {
+  font: normal normal normal 16px/22px Source Sans Pro;
+  letter-spacing: 0.32px;
+  color: $ink;
+  opacity: 1;
+}
+
+.default-input {
+  width: auto;
+  max-width: 100%;
+  min-width: convertToRem(150rem);
+  background: $darker-white;
+  border: 1px solid $darkest-white;
+  font: normal normal normal 20px/26px Source Sans Pro;
+  padding: convertToRem(5rem);
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  appearance: none;
+  -webkit-appearance: none;
+  width: convertToRem(25rem);
+  height: convertToRem(25rem);
+  margin: convertToRem(5rem);
+  margin-left: convertToRem(20rem);
+  background: $darker-white;
+  border: 1px solid $darkest-white;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.checkbox:after {
+  content: url("../../assets/icons/icon-check.svg");
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  color: $white;
+}
+
+.checkbox:checked {
+  background-color: $blue;
+}
+
+.checkbox:checked:after {
+  display: flex;
+}
+
+.checkbox:hover {
+  opacity: 0.7;
+}
+
+.button-primary-neutral {
+  background: $blue;
+  border-radius: 5px;
+  width: clamp(100px, 150px, 300px);
+  height: auto;
+  padding: convertToRem(10rem);
+  font: normal normal 600 Source Sans Pro;
+  font-size: clamp(15px, 17.5px, 23px);
+  color: $white;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.button-primary-neutral:active {
+  opacity: 1;
+  background: $darker-blue;
+}
+
+.button-primary-neutral:hover {
+  opacity: 0.8;
+}
+.button-primary-danger {
+  background: $red;
+  border-radius: 5px;
+  width: clamp(100px, 150px, 300px);
+  height: auto;
+  padding: convertToRem(10rem);
+  font: normal normal 600 Source Sans Pro;
+  font-size: clamp(15px, 17.5px, 23px);
+  color: $white;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.button-primary-danger:active {
+  opacity: 1;
+  background: $darker-blue;
+}
+
+.button-primary-danger:hover {
+  opacity: 0.8;
+}
+
+.card {
+  background: $white 0% 0% no-repeat padding-box;
+  box-shadow: 0px 15px 20px #00000012;
+  border: 1px solid $darkest-white;
+  border-radius: convertToRem(5rem);
+  padding: convertToRem(20rem);
+  margin-bottom: convertToRem(20rem);
+}

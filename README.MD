@@ -1,6 +1,7 @@
 - [x] Get padrão nos repositórios;
 - [x] Filtrar a requisição;
-- [ ] Adicionar repositório;
-- [ ] Remover repositório;
-- [ ] Estilizar;
+- [X] Adicionar repositório;
+- [X] Remover repositório;
+- [X] Estilizar;
 - [ ] Design responsivo;
+- [ ] Firebase hosting;

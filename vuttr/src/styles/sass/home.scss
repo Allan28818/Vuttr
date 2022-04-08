@@ -1,0 +1,71 @@
+@import "./_variables.scss";
+@import "./functions";
+
+.main-content {
+  margin: auto;
+}
+
+.content-wrapper {
+  width: 70%;
+  min-width: convertToRem(200rem);
+  height: auto;
+  margin: auto;
+  margin-top: convertToRem(30rem);
+}
+
+.search-bar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: convertToRem(15rem);
+
+  .search-inputs {
+    display: flex;
+    align-items: center;
+
+    .search-tags-select {
+      appearance: none;
+      -webkit-appearance: none;
+      width: convertToRem(25rem);
+      height: convertToRem(25rem);
+      margin: convertToRem(5rem);
+      margin-left: convertToRem(20rem);
+      background: $darker-white;
+      border: 1px solid $darker-white;
+    }
+  }
+}
+
+.repo {
+  .top-content {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: $blue;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: $dark-blue;
+    }
+  }
+
+  .tags-list {
+    margin-top: convertToRem(20rem);
+    display: flex;
+
+    .tag {
+      cursor: default;
+      margin: convertToRem(2.5rem);
+      transition: all 0.3s;
+    }
+
+    .tag:hover {
+      opacity: 0.7;
+    }
+  }
+}

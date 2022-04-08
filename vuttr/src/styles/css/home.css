@@ -1,3 +1,61 @@
+.main-content {
+  margin: auto;
+}
 
+.content-wrapper {
+  width: 70%;
+  min-width: 12.5rem;
+  height: auto;
+  margin: auto;
+  margin-top: 1.875rem;
+}
+
+.search-bar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 0.9375rem;
+}
+.search-bar-nav .search-inputs {
+  display: flex;
+  align-items: center;
+}
+.search-bar-nav .search-inputs .search-tags-select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  margin: 0.3125rem;
+  margin-left: 1.25rem;
+  background: #f5f4f6;
+  border: 1px solid #f5f4f6;
+}
+
+.repo .top-content {
+  display: flex;
+  justify-content: space-between;
+}
+.repo .top-content a {
+  text-decoration: none;
+  color: #365df0;
+  transition: all 0.3s;
+}
+.repo .top-content a:hover {
+  text-decoration: underline;
+  color: #2f55cc;
+}
+.repo .tags-list {
+  margin-top: 1.25rem;
+  display: flex;
+}
+.repo .tags-list .tag {
+  cursor: default;
+  margin: 0.15625rem;
+  transition: all 0.3s;
+}
+.repo .tags-list .tag:hover {
+  opacity: 0.7;
+}
 
 /*# sourceMappingURL=home.css.map */

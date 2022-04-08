@@ -1,0 +1,6 @@
+@use "sass:math";
+
+@function convertToRem($valueToConvert) {
+  $valueToReturn: math.div($valueToConvert, 16);
+  @return $valueToReturn;
+}

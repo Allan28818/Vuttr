@@ -1,0 +1,64 @@
+@import "../_variables.scss";
+@import "../_functions.scss";
+
+.pop-up-bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.781);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .pop-up-wrapper {
+    width: auto;
+    max-width: convertToRem(750rem);
+    min-width: convertToRem(200rem);
+    height: auto;
+    border-radius: convertToRem(10rem);
+    margin: auto;
+    margin-top: convertToRem(30rem);
+    padding: convertToRem(20rem);
+    background: $darker-white;
+
+    .top-content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .close-button {
+        background: none;
+        width: convertToRem(25rem);
+        height: convertToRem(25rem);
+        cursor: pointer;
+        transition: all 0.3s;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .form-group {
+      display: block;
+      margin-top: convertToRem(20rem);
+      label {
+        display: block;
+      }
+      input {
+        width: 100%;
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+}

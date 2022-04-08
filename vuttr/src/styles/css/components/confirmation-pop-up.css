@@ -1,0 +1,11 @@
+.pop-up-wrapper p {
+  margin-top: 1.5625rem;
+}
+.pop-up-wrapper .buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.1875rem;
+}
+
+/*# sourceMappingURL=confirmation-pop-up.css.map */

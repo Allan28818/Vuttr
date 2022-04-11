@@ -6,6 +6,7 @@ style = "color: #00F9E0; font-weight: bolder"
 </h1>
 
 ## Índice
+- [Acesse o Vuttr](https://vuttr-25ec7.web.app/)
 - [O que é o Vuttr](#o-que-é-o-vuttr)
 - [Como usar?](#como-usar)
 - [Filtrar repositórios](#filtrar-repositórios)

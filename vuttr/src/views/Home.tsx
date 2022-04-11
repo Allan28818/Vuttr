@@ -45,8 +45,8 @@ function Home() {
       if (searchTerm) {
         searchURL += filterBy;
       }
-
-      await api.get(searchURL);
+      const response = await api.get(searchURL);
+      setRepoList(response.data);
     };
 
     handleGetPosts();
@@ -124,7 +124,7 @@ function Home() {
                     <div>
                       <div className="top-content">
                         <h1 className="repo-title header-2">
-                          <a href="#">{repo.title}</a>
+                          <a href={repo.link}>{repo.title}</a>
                         </h1>
                         <button
                           className="button-primary-danger"
